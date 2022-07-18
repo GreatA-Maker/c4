@@ -57,6 +57,10 @@ const Home = () => {
 		axios.post("http://localhost:8080/doctor", payload).then(getData);
 	};
 
+	const handleDelete = (id) => {
+		axios.delete(`http://localhost:8080/doctor/${id}`);
+	};
+
 	return (
 		<>
 			<div>
@@ -171,7 +175,7 @@ const Home = () => {
 							<div>{item.hospital}</div>
 							<div>{item.specialisation}</div>
 							<div>{item.salary}</div>
-							<button>
+							<button handleDelete={handleDelete}>
 								<Link to={`/${item.id}`}>View Details</Link>
 							</button>
 						</div>

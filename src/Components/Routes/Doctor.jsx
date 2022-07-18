@@ -2,7 +2,7 @@ import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 
-const Doctor = () => {
+const Doctor = ({ handleDelete }) => {
 	const params = useParams();
 	const [data, setData] = useState({});
 
@@ -30,7 +30,7 @@ const Doctor = () => {
 					<Link to="/">Go Back</Link>
 				</button>
 				<button>Edit </button>
-				<button>
+				<button onClick={() => handleDelete(data.id)}>
 					<Link to="/">Delete</Link>
 				</button>
 			</div>
