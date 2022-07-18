@@ -1,0 +1,34 @@
+{
+  "doctor": [
+    {
+      "id": 1,
+      "name": "john",
+      "hospital": "sakra",
+      "specialisation": "General",
+      "salary": 200000
+    },
+    {
+      "id": 2,
+      "name": "mike",
+      "hospital": "manipal",
+      "specialisation": "heart",
+      "salary": 240000
+    },
+    {
+      "id": 3,
+      "name": "allen",
+      "hospital": "manipal",
+      "specialisation": "lungs",
+      "salary": 300000
+    },
+    {
+      "id": 4
+    }
+  ],
+  "hospital": [
+    {
+      "id": 1,
+      "name": "sakra"
+    }
+  ]
+}
